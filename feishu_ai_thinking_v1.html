@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>飞书 AI 组织生产力思考 · 四图</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 24px;
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 0 auto 56px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.06);
+    padding: 36px 40px 40px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: .12em;
+    color: #86868b;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    letter-spacing: -.01em;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #515154;
+    margin-bottom: 22px;
+    line-height: 1.55;
+  }
+  svg { display: block; width: 100%; height: auto; }
+  .caption {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e5ea;
+    font-size: 13px;
+    color: #515154;
+    line-height: 1.7;
+  }
+  .caption b { color: #1d1d1f; font-weight: 600; }
+  .caption ul { margin: 6px 0 0; padding-left: 18px; }
+  .caption li { margin: 2px 0; }
+  .doc-head {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    padding: 0 8px;
+  }
+  .doc-head h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -.02em;
+  }
+  .doc-head p {
+    color: #515154;
+    font-size: 14px;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="doc-head">
+  <h2>飞书 AI 组织生产力 · 四图</h2>
+  <p>对应 1 组织生产力模型 / 3 供给构建 / 4 能力单元解构 / 5 业务落地双线</p>
+</div>
+
+<!-- ============ 图 1 ============ -->
+<section class="page">
+  <div class="eyebrow">图 1 · 对应第 1 段</div>
+  <h1>组织生产力的二维模型：CoWork × 数字员工</h1>
+  <div class="subtitle">
+    组织生产力 = 人 × 定位 × 事 的求和 &nbsp;→&nbsp; AI 时代：(人 + 数字人力) × 定位 × (事 + 创作力) 的求和。<br>
+    两个变量：横轴人效（CoWork，辅助提效）/ 纵轴 Innovation（数字员工，完全平替 + 创作力）。
+  </div>
+
+  <svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="q1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#e8f0ff"/><stop offset="100%" stop-color="#c9dcff"/>
+      </linearGradient>
+      <linearGradient id="q2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff3d6"/><stop offset="100%" stop-color="#ffe19a"/>
+      </linearGradient>
+      <linearGradient id="q3" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f2f2f5"/><stop offset="100%" stop-color="#e3e3e8"/>
+      </linearGradient>
+      <linearGradient id="q4" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#e6f7ee"/><stop offset="100%" stop-color="#b7e4c7"/>
+      </linearGradient>
+      <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+      </marker>
+    </defs>
+
+    <!-- 四象限底色 -->
+    <rect x="120" y="70"  width="380" height="230" fill="url(#q1)" rx="6"/>
+    <rect x="500" y="70"  width="380" height="230" fill="url(#q2)" rx="6"/>
+    <rect x="120" y="300" width="380" height="230" fill="url(#q3)" rx="6"/>
+    <rect x="500" y="300" width="380" height="230" fill="url(#q4)" rx="6"/>
+
+    <!-- 坐标轴 -->
+    <line x1="120" y1="530" x2="880" y2="530" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="120" y1="530" x2="120" y2="55"  stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="500" y1="70"  x2="500" y2="530" stroke="#1d1d1f" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="120" y1="300" x2="880" y2="300" stroke="#1d1d1f" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- 轴标签 -->
+    <text x="890" y="548" font-size="14" fill="#1d1d1f" font-weight="600">人效 →（CoWork · 辅助提效）</text>
+    <text x="130" y="50"  font-size="14" fill="#1d1d1f" font-weight="600">↑ Innovation（数字员工 · 完全平替 + 创作力）</text>
+    <text x="75"  y="538" font-size="12" fill="#86868b">0</text>
+
+    <!-- 四象限标题 -->
+    <text x="140" y="105" font-size="15" font-weight="700" fill="#1a4fb0">象限 A · 创造力探索</text>
+    <text x="140" y="128" font-size="12" fill="#1a4fb0">Innovation 高 / 人效低</text>
+    <text x="140" y="155" font-size="12" fill="#1d1d1f">少量实验型 agent、设计/策划类 AI 原创</text>
+    <text x="140" y="175" font-size="12" fill="#1d1d1f">价值在新能力，不在替代存量工时</text>
+
+    <text x="520" y="105" font-size="15" font-weight="700" fill="#9a6a00">象限 B · 理想终局</text>
+    <text x="520" y="128" font-size="12" fill="#9a6a00">Innovation 高 / 人效高（远期）</text>
+    <text x="520" y="155" font-size="12" fill="#1d1d1f">全岗位 AI 伙伴 + 数字员工自主闭环</text>
+    <text x="520" y="175" font-size="12" fill="#1d1d1f">需要技术阶跃 + 市场跨越鸿沟</text>
+
+    <text x="140" y="335" font-size="15" font-weight="700" fill="#515154">象限 C · 现状起点</text>
+    <text x="140" y="358" font-size="12" fill="#515154">低 / 低 · 传统组织</text>
+    <text x="140" y="385" font-size="12" fill="#1d1d1f">AI 未嵌入工作流，靠人海与流程</text>
+
+    <text x="520" y="335" font-size="15" font-weight="700" fill="#1a7a42">象限 D · CoWork 主战场（当下）</text>
+    <text x="520" y="358" font-size="12" fill="#1a7a42">Innovation 低 / 人效高 · timing 最佳</text>
+    <text x="520" y="385" font-size="12" fill="#1d1d1f">IM / 文档 / 会议 / 审批 + AI 辅助</text>
+    <text x="520" y="405" font-size="12" fill="#1d1d1f">增量来自存量工时被压缩</text>
+
+    <!-- 当前市场位置 -->
+    <circle cx="650" cy="420" r="10" fill="#d93025" stroke="#fff" stroke-width="2"/>
+    <text x="670" y="425" font-size="13" font-weight="700" fill="#d93025">市场当前位置</text>
+    <text x="670" y="442" font-size="11" fill="#515154">"开始用 → 用得好" 的过渡带</text>
+
+    <!-- OPC 小圆点 -->
+    <circle cx="760" cy="140" r="8" fill="#9a6a00"/>
+    <text x="775" y="144" font-size="11" fill="#9a6a00">参考：OPC 一人公司</text>
+    <text x="775" y="158" font-size="10" fill="#86868b">服务客群与飞书不匹配</text>
+
+    <!-- 演进箭头 -->
+    <path d="M650,420 Q720,330 780,180" stroke="#d93025" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+    <text x="720" y="290" font-size="11" font-weight="600" fill="#d93025">未来演进</text>
+
+    <!-- 底部论点 -->
+    <text x="120" y="580" font-size="13" font-weight="600" fill="#1d1d1f">判断：飞书当下主攻 D 象限（CoWork），A/B 做 PMF 尝试放菜单里</text>
+    <text x="120" y="600" font-size="11" fill="#86868b">依据：技术阶跃 &gt; 市场线性，客群匹配度 CoWork &gt; 数字员工</text>
+  </svg>
+
+  <div class="caption">
+    <b>读图要点：</b>
+    <ul>
+      <li>公式左边（人效）走 CoWork 路径，右边（Innovation）走数字员工 / 创作力路径，两者是正交维度，不是替代关系</li>
+      <li>市场当前停在 C→D 过渡带，整体还没跑通 D，更没大规模进入 B；OPC 一人公司落在 A，客群跟飞书不重合</li>
+      <li>战略含义：抢 D 的份额拿存量工时红利，A/B 做小体量 PMF 不 All-in</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 图 2 ============ -->
+<section class="page">
+  <div class="eyebrow">图 2 · 对应第 3 段</div>
+  <h1>供给构建：从「人 × 事」升维到「人 × 岗 × 事」</h1>
+  <div class="subtitle">
+    体积差 = 价值差。岗位筛选矩阵：单独产值高 × AI 技术 overlap 高的优先。
+  </div>
+
+  <svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="prio1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ff6b6b"/><stop offset="100%" stop-color="#d93025"/>
+      </linearGradient>
+      <linearGradient id="prio2" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffb347"/><stop offset="100%" stop-color="#e89117"/>
+      </linearGradient>
+      <linearGradient id="prio3" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#a8c8ff"/><stop offset="100%" stop-color="#5b8def"/>
+      </linearGradient>
+      <linearGradient id="prio4" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#e3e3e8"/><stop offset="100%" stop-color="#b8b8bf"/>
+      </linearGradient>
+      <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+      </marker>
+    </defs>
+
+    <!-- 左侧：升维说明 -->
+    <g transform="translate(40,40)">
+      <rect x="0" y="0" width="220" height="560" rx="10" fill="#f8f8fb" stroke="#e5e5ea"/>
+      <text x="20" y="34" font-size="14" font-weight="700" fill="#1d1d1f">升维</text>
+
+      <rect x="20" y="60" width="180" height="70" rx="8" fill="#fff" stroke="#d2d2d7"/>
+      <text x="110" y="90" text-anchor="middle" font-size="13" fill="#515154">现有交易模型</text>
+      <text x="110" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#1d1d1f">人 × 事</text>
+
+      <path d="M110,140 L110,180" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr2)"/>
+      <text x="125" y="165" font-size="11" fill="#86868b">体积差 = 价值差</text>
+
+      <rect x="20" y="190" width="180" height="80" rx="8" fill="#1d1d1f"/>
+      <text x="110" y="220" text-anchor="middle" font-size="13" fill="#d2d2d7">AI 时代交易模型</text>
+      <text x="110" y="246" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">人 × 岗 × 事</text>
+
+      <text x="20" y="310" font-size="12" font-weight="700" fill="#1d1d1f">筛选双条件</text>
+      <text x="20" y="332" font-size="11" fill="#515154">① 单岗位产值/价值高</text>
+      <text x="20" y="352" font-size="11" fill="#515154">② 与 AI 当前能力 overlap 大</text>
+
+      <text x="20" y="388" font-size="12" font-weight="700" fill="#1d1d1f">结论</text>
+      <text x="20" y="408" font-size="11" fill="#515154">先打 A 区抢份额</text>
+      <text x="20" y="424" font-size="11" fill="#515154">B 区进菜单做 PMF / GTM</text>
+      <text x="20" y="440" font-size="11" fill="#515154">C/D 区观察</text>
+
+      <text x="20" y="480" font-size="11" fill="#86868b">⚑ Aily 提问：</text>
+      <text x="20" y="498" font-size="11" fill="#86868b">飞书有没有客户侧</text>
+      <text x="20" y="514" font-size="11" fill="#86868b">岗位 × AI 使用埋点</text>
+      <text x="20" y="530" font-size="11" fill="#86868b">数据来验证人均产出</text>
+      <text x="20" y="546" font-size="11" fill="#86868b">提升？有则 GTM 用数</text>
+    </g>
+
+    <!-- 右侧：四象限矩阵 -->
+    <g transform="translate(300,40)">
+      <!-- 坐标轴 -->
+      <line x1="60" y1="500" x2="660" y2="500" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr2)"/>
+      <line x1="60" y1="500" x2="60"  y2="30"  stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr2)"/>
+      <text x="660" y="522" text-anchor="end" font-size="13" font-weight="600" fill="#1d1d1f">AI 技术 overlap →</text>
+      <text x="68"  y="22"  font-size="13" font-weight="600" fill="#1d1d1f">↑ 岗位价值 / 产值</text>
+
+      <!-- 象限背景 -->
+      <rect x="60"  y="30"  width="300" height="235" fill="#fff6e6" opacity=".5"/>
+      <rect x="360" y="30"  width="300" height="235" fill="#ffe4e4" opacity=".6"/>
+      <rect x="60"  y="265" width="300" height="235" fill="#f2f2f5" opacity=".6"/>
+      <rect x="360" y="265" width="300" height="235" fill="#e6efff" opacity=".5"/>
+      <line x1="360" y1="30"  x2="360" y2="500" stroke="#d2d2d7" stroke-dasharray="3 3"/>
+      <line x1="60"  y1="265" x2="660" y2="265" stroke="#d2d2d7" stroke-dasharray="3 3"/>
+
+      <!-- 象限标签 -->
+      <text x="75"  y="50"  font-size="11" font-weight="700" fill="#9a6a00">B · 观察 / GTM 尝试</text>
+      <text x="375" y="50"  font-size="11" font-weight="700" fill="#d93025">A · 优先主攻（抢份额）</text>
+      <text x="75"  y="285" font-size="11" font-weight="700" fill="#515154">D · 暂不投入</text>
+      <text x="375" y="285" font-size="11" font-weight="700" fill="#1a4fb0">C · 菜单备选 / PMF</text>
+
+      <!-- A 象限 岗位（高价值 · 高AI overlap）-->
+      <g>
+        <circle cx="500" cy="110" r="38" fill="url(#prio1)"/>
+        <text x="500" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">研发</text>
+        <text x="500" y="125" text-anchor="middle" font-size="10" fill="#fff">Code</text>
+
+        <circle cx="590" cy="170" r="34" fill="url(#prio1)"/>
+        <text x="590" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">营销</text>
+        <text x="590" y="184" text-anchor="middle" font-size="10" fill="#fff">Marketing</text>
+
+        <circle cx="430" cy="195" r="32" fill="url(#prio1)"/>
+        <text x="430" y="193" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">产品</text>
+        <text x="430" y="208" text-anchor="middle" font-size="10" fill="#fff">Design</text>
+
+        <circle cx="540" cy="230" r="30" fill="url(#prio1)" opacity=".9"/>
+        <text x="540" y="228" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">服务</text>
+        <text x="540" y="243" text-anchor="middle" font-size="10" fill="#fff">Service</text>
+      </g>
+
+      <!-- B 象限 岗位（高价值 · 低AI overlap） -->
+      <g>
+        <circle cx="150" cy="120" r="28" fill="url(#prio2)"/>
+        <text x="150" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">法务</text>
+        <text x="150" y="132" text-anchor="middle" font-size="9" fill="#fff">Legal</text>
+
+        <circle cx="230" cy="170" r="28" fill="url(#prio2)"/>
+        <text x="230" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">财务</text>
+        <text x="230" y="182" text-anchor="middle" font-size="9" fill="#fff">Finance</text>
+
+        <circle cx="300" cy="130" r="26" fill="url(#prio2)"/>
+        <text x="300" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">供应链</text>
+        <text x="300" y="142" text-anchor="middle" font-size="9" fill="#fff">Supply</text>
+      </g>
+
+      <!-- C 象限 岗位（低价值 · 高AI overlap） -->
+      <g>
+        <circle cx="450" cy="350" r="26" fill="url(#prio3)"/>
+        <text x="450" y="348" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">HR</text>
+        <text x="450" y="362" text-anchor="middle" font-size="9" fill="#fff">People</text>
+
+        <circle cx="540" cy="390" r="24" fill="url(#prio3)"/>
+        <text x="540" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">销售</text>
+        <text x="540" y="402" text-anchor="middle" font-size="9" fill="#fff">Sales</text>
+
+        <circle cx="600" cy="430" r="24" fill="url(#prio3)"/>
+        <text x="600" y="428" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">IT</text>
+      </g>
+
+      <!-- D 象限 岗位 -->
+      <g>
+        <circle cx="180" cy="380" r="22" fill="url(#prio4)"/>
+        <text x="180" y="378" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">管理</text>
+        <text x="180" y="390" text-anchor="middle" font-size="9" fill="#fff">Mgmt</text>
+
+        <circle cx="270" cy="430" r="22" fill="url(#prio4)"/>
+        <text x="270" y="428" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">物流</text>
+        <text x="270" y="440" text-anchor="middle" font-size="9" fill="#fff">Logistics</text>
+      </g>
+
+      <!-- 图例 -->
+      <g transform="translate(60,540)">
+        <circle cx="8" cy="8" r="6" fill="url(#prio1)"/>
+        <text x="22" y="12" font-size="11" fill="#1d1d1f">A 优先</text>
+        <circle cx="85" cy="8" r="6" fill="url(#prio2)"/>
+        <text x="100" y="12" font-size="11" fill="#1d1d1f">B 菜单</text>
+        <circle cx="170" cy="8" r="6" fill="url(#prio3)"/>
+        <text x="185" y="12" font-size="11" fill="#1d1d1f">C PMF</text>
+        <circle cx="250" cy="8" r="6" fill="url(#prio4)"/>
+        <text x="265" y="12" font-size="11" fill="#1d1d1f">D 观察</text>
+        <text x="360" y="12" font-size="10" fill="#86868b">圆圈大小 ~ 相对价值量级（示意）</text>
+      </g>
+    </g>
+  </svg>
+
+  <div class="caption">
+    <b>读图要点：</b>
+    <ul>
+      <li>升维的关键是引入「岗」这个中间层，让 SKU 能按岗位打包，而不是按人头或按事粒度卖</li>
+      <li>A 象限（研发 / 产品 / 营销 / 服务）是 sizing 高、技术 overlap 明确、timing 成立的起手岗位</li>
+      <li>Aily 追问值得带进讨论：飞书客户侧是否已有岗位 × AI 使用埋点，能把 A 象限从「讲道理」升级成「拿数字」</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 图 3 ============ -->
+<section class="page">
+  <div class="eyebrow">图 3 · 对应第 4 段</div>
+  <h1>AI 能力单元解构：从原子到 SKU，inside 到飞书</h1>
+  <div class="subtitle">
+    最 raw：data + model + infra &nbsp;→&nbsp; 细化：(三方 + 二方 + 一方 data) + (model + engineering) + infra。<br>
+    Aily 追问点位：「二方 vs 三方」=「飞书自己做不做模型」= Router 路线 vs 系统集成商路线。
+  </div>
+
+  <svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="layerData" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#e8f3ff"/><stop offset="100%" stop-color="#c4dcff"/>
+      </linearGradient>
+      <linearGradient id="layerModel" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#fff0db"/><stop offset="100%" stop-color="#ffd692"/>
+      </linearGradient>
+      <linearGradient id="layerInfra" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#edecff"/><stop offset="100%" stop-color="#c8c4ff"/>
+      </linearGradient>
+      <marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+      </marker>
+    </defs>
+
+    <!-- 左：raw 结构 -->
+    <g transform="translate(30,40)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#86868b">最 raw 结构</text>
+      <rect x="0" y="20"  width="210" height="60" rx="8" fill="url(#layerData)"/>
+      <text x="105" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="#1a4fb0">Data</text>
+      <text x="105" y="66" text-anchor="middle" font-size="10" fill="#515154">语料 / 知识 / 行为</text>
+
+      <rect x="0" y="90"  width="210" height="60" rx="8" fill="url(#layerModel)"/>
+      <text x="105" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#9a6a00">Model</text>
+      <text x="105" y="136" text-anchor="middle" font-size="10" fill="#515154">LLM / VLM / Agent</text>
+
+      <rect x="0" y="160" width="210" height="60" rx="8" fill="url(#layerInfra)"/>
+      <text x="105" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#4a3fbe">Infra</text>
+      <text x="105" y="206" text-anchor="middle" font-size="10" fill="#515154">算力 / 存储 / 网络</text>
+    </g>
+
+    <!-- 中间箭头 -->
+    <path d="M250,145 L310,145" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr3)"/>
+    <text x="280" y="135" text-anchor="middle" font-size="11" fill="#86868b">细化</text>
+
+    <!-- 中：细化结构 -->
+    <g transform="translate(320,40)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#86868b">细化结构（inside 飞书的候选组合）</text>
+
+      <!-- Data 层 -->
+      <rect x="0" y="20"  width="360" height="80" rx="8" fill="url(#layerData)"/>
+      <text x="14" y="44" font-size="13" font-weight="700" fill="#1a4fb0">Data</text>
+      <rect x="14" y="56" width="100" height="32" rx="4" fill="#fff" stroke="#1a4fb0"/>
+      <text x="64" y="76" text-anchor="middle" font-size="11" fill="#1a4fb0">三方 · 公域</text>
+      <rect x="124" y="56" width="100" height="32" rx="4" fill="#fff" stroke="#1a4fb0"/>
+      <text x="174" y="76" text-anchor="middle" font-size="11" fill="#1a4fb0">二方 · 生态</text>
+      <rect x="234" y="56" width="110" height="32" rx="4" fill="#1a4fb0"/>
+      <text x="289" y="76" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">一方 · 飞书</text>
+
+      <!-- Model 层 -->
+      <rect x="0" y="110" width="360" height="80" rx="8" fill="url(#layerModel)"/>
+      <text x="14" y="134" font-size="13" font-weight="700" fill="#9a6a00">Model + Engineering</text>
+      <rect x="14" y="146" width="100" height="32" rx="4" fill="#fff" stroke="#9a6a00"/>
+      <text x="64" y="166" text-anchor="middle" font-size="11" fill="#9a6a00">三方模型</text>
+      <rect x="124" y="146" width="100" height="32" rx="4" fill="#fff" stroke="#9a6a00"/>
+      <text x="174" y="166" text-anchor="middle" font-size="11" fill="#9a6a00">二方微调</text>
+      <rect x="234" y="146" width="110" height="32" rx="4" fill="#9a6a00"/>
+      <text x="289" y="166" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Engineering</text>
+
+      <!-- Infra 层 -->
+      <rect x="0" y="200" width="360" height="60" rx="8" fill="url(#layerInfra)"/>
+      <text x="14" y="224" font-size="13" font-weight="700" fill="#4a3fbe">Infra</text>
+      <text x="14" y="244" font-size="10" fill="#515154">飞书自有 + 云合作（算力 / 安全 / 开放 API）</text>
+    </g>
+
+    <!-- 右：两条战略路线 -->
+    <g transform="translate(720,40)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#86868b">⚑ 战略分叉（Aily 挖深）</text>
+
+      <rect x="0" y="20"  width="250" height="110" rx="10" fill="#fff" stroke="#5b8def" stroke-width="2"/>
+      <text x="14" y="44" font-size="13" font-weight="700" fill="#1a4fb0">Router 路线 · 偏三方</text>
+      <text x="14" y="66" font-size="11" fill="#1d1d1f">接入多模型，调度+评估</text>
+      <text x="14" y="84" font-size="11" fill="#515154">轻 / 快 / 易规模化</text>
+      <text x="14" y="100" font-size="11" fill="#515154">护城河在分发 + 数据闭环</text>
+      <text x="14" y="118" font-size="11" fill="#d93025">风险：模型侧受制于人</text>
+
+      <rect x="0" y="150" width="250" height="110" rx="10" fill="#fff" stroke="#9a6a00" stroke-width="2"/>
+      <text x="14" y="174" font-size="13" font-weight="700" fill="#9a6a00">系统集成商路线 · 偏二方</text>
+      <text x="14" y="196" font-size="11" fill="#1d1d1f">自建 / 深度定制 + 场景数据</text>
+      <text x="14" y="214" font-size="11" fill="#515154">重 / 深 / 护城河高</text>
+      <text x="14" y="230" font-size="11" fill="#515154">护城河在场景 + 数据 + 微调</text>
+      <text x="14" y="248" font-size="11" fill="#d93025">风险：投入大 / 迭代慢</text>
+    </g>
+
+    <!-- 下半：SKU 装配示意 -->
+    <g transform="translate(30,320)">
+      <rect x="0" y="0" width="940" height="290" rx="12" fill="#fafafc" stroke="#e5e5ea"/>
+      <text x="20" y="28" font-size="14" font-weight="700" fill="#1d1d1f">SKU = 能力单元的模块或排列组合</text>
+      <text x="20" y="48" font-size="11" fill="#86868b">(data 片) × (model 片) × (engineering 片) + 场景封装 = 一个可定价、可交付、可计量的产品</text>
+
+      <!-- 模块条 -->
+      <g transform="translate(30,80)">
+        <!-- Data -->
+        <rect x="0" y="0" width="110" height="40" rx="6" fill="#c4dcff"/>
+        <text x="55" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#1a4fb0">一方数据</text>
+        <rect x="120" y="0" width="110" height="40" rx="6" fill="#e8f3ff"/>
+        <text x="175" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#1a4fb0">三方语料</text>
+
+        <text x="250" y="25" font-size="18" font-weight="700" fill="#86868b">×</text>
+
+        <!-- Model -->
+        <rect x="280" y="0" width="110" height="40" rx="6" fill="#ffd692"/>
+        <text x="335" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#9a6a00">三方 LLM</text>
+        <rect x="400" y="0" width="110" height="40" rx="6" fill="#fff0db"/>
+        <text x="455" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#9a6a00">二方微调</text>
+
+        <text x="530" y="25" font-size="18" font-weight="700" fill="#86868b">×</text>
+
+        <!-- Engineering -->
+        <rect x="560" y="0" width="120" height="40" rx="6" fill="#9a6a00"/>
+        <text x="620" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Agent 编排</text>
+        <rect x="690" y="0" width="120" height="40" rx="6" fill="#c8c4ff"/>
+        <text x="750" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#4a3fbe">Infra 封装</text>
+
+        <text x="830" y="25" font-size="18" font-weight="700" fill="#86868b">=</text>
+
+        <rect x="855" y="-6" width="56" height="52" rx="8" fill="#1d1d1f"/>
+        <text x="883" y="18" text-anchor="middle" font-size="10" fill="#d2d2d7">SKU</text>
+        <text x="883" y="36" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">包</text>
+      </g>
+
+      <!-- 三个示例 SKU -->
+      <g transform="translate(30,150)">
+        <rect x="0" y="0" width="280" height="120" rx="10" fill="#fff" stroke="#d2d2d7"/>
+        <text x="16" y="26" font-size="13" font-weight="700" fill="#d93025">SKU-α · Code CoWork</text>
+        <text x="16" y="46" font-size="10" fill="#515154">A 象限 · 研发岗</text>
+        <text x="16" y="66" font-size="10" fill="#1d1d1f">一方(仓库/IM) + 三方(Claude/GPT)</text>
+        <text x="16" y="82" font-size="10" fill="#1d1d1f">+ 二方微调(内部代码) + Agent 编排</text>
+        <text x="16" y="102" font-size="10" fill="#1a7a42">按座席 × 调用量计费</text>
+
+        <rect x="300" y="0" width="280" height="120" rx="10" fill="#fff" stroke="#d2d2d7"/>
+        <text x="316" y="26" font-size="13" font-weight="700" fill="#d93025">SKU-β · Marketing Studio</text>
+        <text x="316" y="46" font-size="10" fill="#515154">A 象限 · 营销岗</text>
+        <text x="316" y="66" font-size="10" fill="#1d1d1f">一方(CRM/文档) + 三方(VLM/图像)</text>
+        <text x="316" y="82" font-size="10" fill="#1d1d1f">+ 场景模板 + Agent 编排</text>
+        <text x="316" y="102" font-size="10" fill="#1a7a42">按产出件 + 订阅计费</text>
+
+        <rect x="600" y="0" width="310" height="120" rx="10" fill="#fff" stroke="#d2d2d7"/>
+        <text x="616" y="26" font-size="13" font-weight="700" fill="#1a4fb0">SKU-γ · Service Agent</text>
+        <text x="616" y="46" font-size="10" fill="#515154">A 象限 · 服务岗 / 可演进至数字员工</text>
+        <text x="616" y="66" font-size="10" fill="#1d1d1f">一方(工单/知识) + 二方微调(客服)</text>
+        <text x="616" y="82" font-size="10" fill="#1d1d1f">+ 三方(多模态) + Agent 编排 + Infra</text>
+        <text x="616" y="102" font-size="10" fill="#1a7a42">按会话 / 解决率计费</text>
+      </g>
+    </g>
+  </svg>
+
+  <div class="caption">
+    <b>读图要点：</b>
+    <ul>
+      <li>三层堆叠只是物理分层，真正能卖的是横着装配出来的 SKU 包 —— 数据 × 模型 × 工程缺一不可</li>
+      <li>Router（三方为主） vs 集成商（二方为主）是 GTM 的分叉，不是纯技术选择 —— 决定了飞书护城河放哪一层</li>
+      <li>短期建议：Router 起 + 关键 SKU 二方微调（比如 Service Agent），用数据闭环反哺</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 图 4 ============ -->
+<section class="page">
+  <div class="eyebrow">图 4 · 对应第 5 段</div>
+  <h1>业务落地：内部供给线 × 外部交付线</h1>
+  <div class="subtitle">
+    SKU 从选品、谈判、上架，到包装、echo、delta，形成两条独立但咬合的 pipeline。
+  </div>
+
+  <svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="innerBg" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#eaf4ff"/><stop offset="100%" stop-color="#d0e4ff"/>
+      </linearGradient>
+      <linearGradient id="outerBg" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#fff4e0"/><stop offset="100%" stop-color="#ffe1b2"/>
+      </linearGradient>
+      <marker id="arr4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+      </marker>
+      <marker id="arr4o" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#9a6a00"/>
+      </marker>
+      <marker id="arr4i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1a4fb0"/>
+      </marker>
+    </defs>
+
+    <!-- 顶部：SKU 枢纽 -->
+    <rect x="380" y="30" width="240" height="70" rx="12" fill="#1d1d1f"/>
+    <text x="500" y="60" text-anchor="middle" font-size="14" fill="#d2d2d7">中枢</text>
+    <text x="500" y="84" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">SKU 目录</text>
+
+    <!-- 内部供给线 -->
+    <g>
+      <rect x="30" y="130" width="460" height="440" rx="14" fill="url(#innerBg)" opacity=".6"/>
+      <text x="50" y="160" font-size="16" font-weight="700" fill="#1a4fb0">内部供给线 · Inside 飞书</text>
+      <text x="50" y="180" font-size="11" fill="#515154">把 AI 能力单元变成可交易的 SKU</text>
+
+      <!-- 步骤 1 -->
+      <rect x="50" y="200" width="420" height="70" rx="10" fill="#fff" stroke="#5b8def"/>
+      <circle cx="80" cy="235" r="16" fill="#1a4fb0"/>
+      <text x="80" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+      <text x="108" y="228" font-size="13" font-weight="700" fill="#1d1d1f">选品 · AI × 市场分析</text>
+      <text x="108" y="248" font-size="11" fill="#515154">按岗位聚焦：code / data / service / people / legal …</text>
+      <text x="108" y="263" font-size="11" fill="#515154">验证 sizing、timing、客群匹配度</text>
+
+      <path d="M260,275 L260,295" stroke="#1a4fb0" stroke-width="2" marker-end="url(#arr4i)"/>
+
+      <!-- 步骤 2 -->
+      <rect x="50" y="300" width="420" height="70" rx="10" fill="#fff" stroke="#5b8def"/>
+      <circle cx="80" cy="335" r="16" fill="#1a4fb0"/>
+      <text x="80" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text>
+      <text x="108" y="328" font-size="13" font-weight="700" fill="#1d1d1f">谈判 · 技术 + 商务</text>
+      <text x="108" y="348" font-size="11" fill="#515154">与供应商敲定模型 / 数据 / 工程接入方式</text>
+      <text x="108" y="363" font-size="11" fill="#515154">商务条款（分成 / 授权 / SLA）</text>
+
+      <path d="M260,375 L260,395" stroke="#1a4fb0" stroke-width="2" marker-end="url(#arr4i)"/>
+
+      <!-- 步骤 3 -->
+      <rect x="50" y="400" width="420" height="70" rx="10" fill="#fff" stroke="#5b8def"/>
+      <circle cx="80" cy="435" r="16" fill="#1a4fb0"/>
+      <text x="80" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text>
+      <text x="108" y="428" font-size="13" font-weight="700" fill="#1d1d1f">上架 · SKU transfer 飞书</text>
+      <text x="108" y="448" font-size="11" fill="#515154">技术对接 · 定价 · 计量计费接 LTC</text>
+      <text x="108" y="463" font-size="11" fill="#515154">产出：可在飞书内分发 / 结算的 SKU</text>
+
+      <!-- 输出 -->
+      <rect x="50" y="500" width="420" height="55" rx="10" fill="#1a4fb0"/>
+      <text x="260" y="523" text-anchor="middle" font-size="12" fill="#d0e4ff">交付物</text>
+      <text x="260" y="543" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">可分发 / 可计费的原子 SKU 清单</text>
+    </g>
+
+    <!-- 外部交付线 -->
+    <g>
+      <rect x="510" y="130" width="460" height="440" rx="14" fill="url(#outerBg)" opacity=".6"/>
+      <text x="530" y="160" font-size="16" font-weight="700" fill="#9a6a00">外部交付线 · To 客户</text>
+      <text x="530" y="180" font-size="11" fill="#515154">把 SKU 变成客户手里能落地的价值</text>
+
+      <!-- 包装 -->
+      <rect x="530" y="200" width="420" height="70" rx="10" fill="#fff" stroke="#e89117"/>
+      <circle cx="560" cy="235" r="16" fill="#9a6a00"/>
+      <text x="560" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">A</text>
+      <text x="588" y="228" font-size="13" font-weight="700" fill="#1d1d1f">包装 · 产品方案级套餐</text>
+      <text x="588" y="248" font-size="11" fill="#515154">按行业 / 通路映射：零售、制造、金融、服务</text>
+      <text x="588" y="263" font-size="11" fill="#515154">把原子 SKU 组合成「岗位包 / 行业包」</text>
+
+      <path d="M740,275 L740,295" stroke="#9a6a00" stroke-width="2" marker-end="url(#arr4o)"/>
+
+      <!-- Echo -->
+      <rect x="530" y="300" width="420" height="70" rx="10" fill="#fff" stroke="#e89117"/>
+      <circle cx="560" cy="335" r="16" fill="#9a6a00"/>
+      <text x="560" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">B</text>
+      <text x="588" y="328" font-size="13" font-weight="700" fill="#1d1d1f">Echo · Call-high + 价值传递</text>
+      <text x="588" y="348" font-size="11" fill="#515154">咨询 / 翻译：把 AI 能力翻成客户语言</text>
+      <text x="588" y="363" font-size="11" fill="#515154">面向决策层讲清楚「为什么现在 · 为什么我们」</text>
+
+      <path d="M740,375 L740,395" stroke="#9a6a00" stroke-width="2" marker-end="url(#arr4o)"/>
+
+      <!-- Delta -->
+      <rect x="530" y="400" width="420" height="70" rx="10" fill="#fff" stroke="#e89117"/>
+      <circle cx="560" cy="435" r="16" fill="#9a6a00"/>
+      <text x="560" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">C</text>
+      <text x="588" y="428" font-size="13" font-weight="700" fill="#1d1d1f">Delta · 0→1 Demo · 1→N 体验</text>
+      <text x="588" y="448" font-size="11" fill="#515154">培训 / 咨询 / 方案 / 优化 / 陪跑</text>
+      <text x="588" y="463" font-size="11" fill="#515154">交付定制 / 集成对接 / 开发服务</text>
+
+      <!-- 输出 -->
+      <rect x="530" y="500" width="420" height="55" rx="10" fill="#9a6a00"/>
+      <text x="740" y="523" text-anchor="middle" font-size="12" fill="#ffe1b2">交付物</text>
+      <text x="740" y="543" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">客户侧可用的行业 / 岗位解决方案</text>
+    </g>
+
+    <!-- 咬合虚线 -->
+    <path d="M490,340 L510,340" stroke="#1d1d1f" stroke-dasharray="4 3" stroke-width="1.5"/>
+    <path d="M510,340 L490,340" stroke="#1d1d1f" stroke-dasharray="4 3" stroke-width="1.5"/>
+
+    <!-- 中心连接到中枢 -->
+    <path d="M380,65 Q260,100 260,200" stroke="#1a4fb0" stroke-width="2" fill="none" marker-end="url(#arr4i)"/>
+    <path d="M620,65 Q740,100 740,200" stroke="#9a6a00" stroke-width="2" fill="none" marker-end="url(#arr4o)"/>
+
+    <!-- 反馈回路 -->
+    <path d="M260,555 Q30,555 30,90 L370,65" stroke="#1a4fb0" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr4i)"/>
+    <path d="M740,555 Q970,555 970,90 L630,65" stroke="#9a6a00" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr4o)"/>
+
+    <text x="80" y="595" font-size="10" fill="#86868b">内部反馈：上架结果 → 反哺选品</text>
+    <text x="780" y="595" font-size="10" fill="#86868b">外部反馈：客户 delta → 反哺包装</text>
+  </svg>
+
+  <div class="caption">
+    <b>读图要点：</b>
+    <ul>
+      <li>两条线共享同一个 SKU 目录（中枢），但关注点不同：内部线追求「可交易」，外部线追求「可落地」</li>
+      <li>内部 1→2→3 每一步都要产出可沉淀物，否则选品成本会被重复浪费</li>
+      <li>外部 A→B→C 是「讲清 → 打动 → 交付」的漏斗，Call-high 不到位 Delta 做了也白做</li>
+      <li>两条反馈回路（虚线）是长期飞轮：客户 delta 数据反哺选品，选品反哺包装</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
